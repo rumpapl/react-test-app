@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {UserProvider} from './userContext';
+import { UserProvider } from './userContext';
 import CompA from './CompA';
 import PostAPI from '../../APICalls/Post';
+import { Header } from '../../Route';
+import { Container } from 'react-bootstrap';
 
 class ParentComp extends Component {
 
@@ -38,9 +40,18 @@ class ParentComp extends Component {
 
     render() {
         return (
-            <UserProvider value={this.state.posts}>
-                <CompA />
-            </UserProvider>
+            <div>
+                <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+                    <Header />
+                </nav>
+                <Container>
+                    <UserProvider value={this.state.posts}>
+                        <CompA />
+                    </UserProvider>
+                </Container>
+
+            </div>
+
         );
     }
 }
