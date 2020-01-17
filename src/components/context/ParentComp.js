@@ -5,9 +5,9 @@ import CompA from './CompA';
 class ParentComp extends Component {
   render() {
     return (
-   <UserProvider value={"Context-Value"}>
+//    <UserProvider value={"Context-Value"}>
        <CompA />
-   </UserProvider>
+//    </UserProvider>
     );
   }
 }
