@@ -8,8 +8,17 @@ class CompD extends Component {
             <h1>component D</h1>
             <UserConsumer>
                 {
-                    (contextValue)=>{
-                        return <h3>from component C - {contextValue}</h3>
+                    (posts)=>{
+                        return (
+                            <div>
+                                {
+                                    posts.length ?
+                                        <p>from component D - {posts[1].body}</p>
+                                        :
+                                        <h1>no post yet</h1>
+                                }
+                            </div>
+                        )
                     }
                 }
             </UserConsumer>
