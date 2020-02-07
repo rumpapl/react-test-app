@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NamedDocTitleWithCountComp from './namedDocTitleWithCount';
 
-const parentComp = () => {
-    return (
-        <div>
-            <NamedDocTitleWithCountComp/>
-        </div>
-    );
-};
+export default class ParentComp extends Component {
 
-export default parentComp;
+    render() {
+        return (
+            <div>
+                <NamedDocTitleWithCountComp/>
+            </div>
+        );
+    }
+}
