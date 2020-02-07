@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
 
-const countComp = () => {
+const countComp = (props) => {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(props.value);
 
     return (
         <div>
