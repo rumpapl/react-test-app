@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header } from '../../Route';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import UseStateHooks from './UseStateHooks/parentComp';
+import UseEffectHooks from './UseEffectHooks/parentComp';
 
 export default class ParentComp extends Component {
 
@@ -18,6 +19,11 @@ export default class ParentComp extends Component {
                 <UseStateHooks />
             )
         }
+        else if (this.state.text === "useEffectHooks") {
+            return (
+                <UseEffectHooks />
+            )
+        }
 
     }
 
@@ -32,6 +38,10 @@ export default class ParentComp extends Component {
                     <Row>
                         <Col>
                             <Button variant="secondary" onClick={() => { this.setState({ text: "useStateHooks" }) }}>useStateHooks</Button>
+                            <br/>
+                            <br/>
+                            <Button variant="secondary" onClick={() => { this.setState({ text: "useEffectHooks" }) }}>useEffectHooks</Button>
+                        
                         </Col>
                         <Col>
                             {this.renderScreen()}
