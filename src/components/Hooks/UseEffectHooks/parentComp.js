@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NamedDocTitleWithCountComp from './namedDocTitleWithCount';
+import MouseMoveComp from './mouseMoveComp';
 
 export default class ParentComp extends Component {
 
@@ -7,6 +8,7 @@ export default class ParentComp extends Component {
         return (
             <div>
                 <NamedDocTitleWithCountComp/>
+                <MouseMoveComp/>
             </div>
         );
     }
