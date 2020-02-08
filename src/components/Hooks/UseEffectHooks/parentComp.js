@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NamedDocTitleWithCountComp from './namedDocTitleWithCount';
 // import MouseMoveComp from './mouseMoveComp';
 import ToggleMouseComp from './toggleMouse';
+import AutoCounter from './autoCounter';
 
 export default class ParentComp extends Component {
 
@@ -10,6 +11,7 @@ export default class ParentComp extends Component {
             <div>
                 <NamedDocTitleWithCountComp/>
                 <ToggleMouseComp/>
+                <AutoCounter/>
             </div>
         );
     }
