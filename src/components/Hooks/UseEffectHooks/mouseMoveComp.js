@@ -15,6 +15,13 @@ const mouseMoveComp = () => {
     useEffect(()=>{
         console.log('updating component')
         window.addEventListener('mousemove', logMousePossition);
+
+        return(
+            ()=>{
+                console.log('unmounting component')
+                window.removeEventListener('mousemove', logMousePossition)
+            }
+        )
     }, [])
     // Run effects only once using []
 
