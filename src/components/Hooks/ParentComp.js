@@ -3,6 +3,7 @@ import { Header } from '../../Route';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import UseStateHooks from './UseStateHooks/parentComp';
 import UseEffectHooks from './UseEffectHooks/parentComp';
+import UseContextHooks from './UseContextHooks/parentComp';
 
 export default class ParentComp extends Component {
 
@@ -24,7 +25,11 @@ export default class ParentComp extends Component {
                 <UseEffectHooks />
             )
         }
-
+        else if (this.state.text === "useContextHooks") {
+            return (
+                <UseContextHooks />
+            )
+        }
     }
 
     render() {
@@ -41,6 +46,9 @@ export default class ParentComp extends Component {
                             <br/>
                             <br/>
                             <Button variant="secondary" onClick={() => { this.setState({ text: "useEffectHooks" }) }}>useEffectHooks</Button>
+                            <br/>
+                            <br/>
+                            <Button variant="secondary" onClick={() => { this.setState({ text: "useContextHooks" }) }}>useContextHooks</Button>
                         
                         </Col>
                         <Col>
