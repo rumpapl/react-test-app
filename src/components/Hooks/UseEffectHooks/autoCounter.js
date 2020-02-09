@@ -14,7 +14,7 @@ const autoCounter = () => {
             clearInterval(interval);
         }
 
-    }, [count])
+    }, [])
 
 
     return (
