@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import UseStateHooks from './UseStateHooks/parentComp';
 import UseEffectHooks from './UseEffectHooks/parentComp';
 import UseContextHooks from './UseContextHooks/parentComp';
+import UseReducerHooks from './UseReducerHooks/parentComp';
 
 export default class ParentComp extends Component {
 
@@ -30,6 +31,11 @@ export default class ParentComp extends Component {
                 <UseContextHooks />
             )
         }
+        else if (this.state.text === "useReducerHooks") {
+            return (
+                <UseReducerHooks />
+            )
+        }
     }
 
     render() {
@@ -49,6 +55,9 @@ export default class ParentComp extends Component {
                             <br/>
                             <br/>
                             <Button variant="secondary" onClick={() => { this.setState({ text: "useContextHooks" }) }}>useContextHooks</Button>
+                            <br/>
+                            <br/>
+                            <Button variant="secondary" onClick={() => { this.setState({ text: "useReducerHooks" }) }}>useReducerHooks</Button>
                         
                         </Col>
                         <Col>
