@@ -22,13 +22,13 @@ function Header() {
     return (
         <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse ">
             &ensp;
-        <Link to="/"><button className='badge list-group-item'><h7 className="text-dark">Home</h7></button></Link>
+        <Link to="/"><button className='badge list-group-item'><h6 className="text-dark">Home</h6></button></Link>
             &ensp;
-         <Link to="/react-context"><button className='badge list-group-item'><h7 className="text-dark">Context</h7></button></Link>
+         <Link to="/react-context"><button className='badge list-group-item'><h6 className="text-dark">Context</h6></button></Link>
             &ensp;
-         <Link to="/react-HOC"><button className='badge list-group-item'><h7 className="text-dark">HOC</h7></button></Link>
+         <Link to="/react-HOC"><button className='badge list-group-item'><h6 className="text-dark">HOC</h6></button></Link>
             &ensp;
-         <Link to="/react-Hooks"><button className='badge list-group-item'><h7 className="text-dark">Hooks</h7></button></Link>
+         <Link to="/react-Hooks"><button className='badge list-group-item'><h6 className="text-dark">Hooks</h6></button></Link>
 
         </nav>
 
