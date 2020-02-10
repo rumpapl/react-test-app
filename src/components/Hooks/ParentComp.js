@@ -47,7 +47,7 @@ export default class ParentComp extends Component {
                 <br />
                 <Container>
                     <Row>
-                        <Col>
+                        <Col md={4}>
                             <Button variant="secondary" onClick={() => { this.setState({ text: "useStateHooks" }) }}>useStateHooks</Button>
                             <br/>
                             <br/>
@@ -60,7 +60,7 @@ export default class ParentComp extends Component {
                             <Button variant="secondary" onClick={() => { this.setState({ text: "useReducerHooks" }) }}>useReducerHooks</Button>
                         
                         </Col>
-                        <Col>
+                        <Col md={8}>
                             {this.renderScreen()}
                         </Col>
                     </Row>

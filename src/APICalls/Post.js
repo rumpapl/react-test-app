@@ -16,6 +16,21 @@ async function getPosts() {
     }
 }
 
+async function getSinglePosts(id) {
+    const { postsURL } = AppConfig;
+    try {
+        const promise = await axios({
+            method: "GET",
+            url: postsURL+id,
+            timeout: timeOut,
+        });
+        return promise;
+    } catch (err) {
+        return err.response;
+    }
+}
+
 module.exports = {
     getPosts,
+    getSinglePosts,
 }
